@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Deck from "@/components/Deck.astro";
+---
+
+<Layout title="Jun's Developer Portfolio">
+  <main>
+    <section class="section-container">
+      <h1 class="font-title text-2xl mt-4">
+        Jun Yang <span class="text-primary">Chin</span>
+      </h1>
+      <p class="hero-text">
+        Mechanical Engineer turned Web Developer based in Kuala Lumpur.
+      </p>
+      <p class="hero-text">
+        I like trains. No seriously I do! Which is why I did 4 years of
+        Mechanical Engineering in Nottingham. Worked for 2 years in a
+        corporation and decided that I didn't like it. So I pivoted into web
+        development. Which is, well, kind of like engineering but with
+        computers!
+      </p>
+      <p class="hero-text">
+        Jun Yang is currently building(and breaking) things at
+        <a
+          href="https://invokeisdata.com"
+          target="_blank"
+          class="border-light-dark border-b-[1px] hover:border-primary hover:text-primary hover:bg-slate-200 rounded"
+        >
+          @invokeisdata
+        </a>. He is one of the core backend developer of INVOKE's first SaaS
+        brainchild - adnexio.
+      </p>
+      <ul class="flex flex-row gap-4 mt-4">
+        <li>
+          <a href="https://www.linkedin.com/in/junyangchin/" target="_blank">
+            <i class="bi bi-linkedin text-xl"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/junyang-chin" target="_blank">
+            <i class="bi bi-github text-xl"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:junyang.chin@outlook.com" target="_blank">
+            <i class="bi bi-envelope-fill text-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section-container">
+      <h1 class="section-title">Selected Work</h1>
+      <Deck
+        title="adnexioJOBS"
+        body="AI job matching without the frills"
+        href="https://adnexio.jobs"
+      />
+      <Deck
+        title="adnexioEDU"
+        body="Accessible education in tech"
+        href="https://edu.adnexio.jobs"
+      />
+      <Deck
+        title="adnexioHR"
+        body="All your HR needs in one portal"
+        href="https://hr.adnexio.jobs"
+      />
+    </section>
+    <section class="section-container">
+      <h1 class="section-title">Get In Touch</h1>
+      The fastest way to reach me → <span
+        class="text-primary bg-slate-200 px-2 py-1 rounded inline"
+      >
+        junyang.chin@outlook.com
+      </span>
+    </section>
+  </main>
+</Layout>
