@@ -11,24 +11,19 @@ import Deck from "@/components/Deck.astro";
       </h1>
       <p class="hero-text">Hello, I'm web developer based in Kuala Lumpur.</p>
       <p class="hero-text">
-        I didn't study Computer Science in uni. In my first job as an
-        Manufacturing Engineer, I discovered the power of programming to
-        automate the boring tasks. So I did a little bit of googling and wrote
-        my first program! It was poorly written script that extracts data from a
-        csv and inserts it into a relational database. It was pure satisfaction
-        when the script executed successfully. Since then, I haven't stopped
-        exploring the world of software engineering!
-      </p>
-      <p class="hero-text">
         Jun Yang is currently building(and breaking) things at
         <a
           href="https://invokeisdata.com"
           target="_blank"
-          class="border-light-dark border-b-[1px] hover:border-primary hover:text-primary hover:bg-slate-200 rounded"
+          class="underline hover-link"
         >
           @invokeisdata
-        </a>. He is one of the core backend developer of INVOKE's first SaaS
-        brainchild - adnexio.
+        </a>. He is one of the core backend developer of INVOKE's first
+        brainchild - <a
+          href="https://adnexio.jobs"
+          target="_blank"
+          class="underline hover-link">adnexio</a
+        >.
       </p>
       <ul class="flex flex-row gap-4 mt-4">
         <li>
@@ -69,11 +64,14 @@ import Deck from "@/components/Deck.astro";
     </section>
     <section class="section-container">
       <h1 class="section-title">Get In Touch</h1>
-      The fastest way to reach me → <span
-        class="text-primary bg-slate-200 px-2 py-1 rounded inline"
-      >
-        junyang.chin@outlook.com
-      </span>
+      <div class="flex flex-wrap">
+        <p class="py-1">The fastest way to reach me &nbsp</p>
+        <p class="py-1">
+          → <span class="text-primary bg-slate-200 px-2 py-1 rounded inline">
+            junyang.chin@outlook.com
+          </span>
+        </p>
+      </div>
     </section>
   </main>
 </Layout>
