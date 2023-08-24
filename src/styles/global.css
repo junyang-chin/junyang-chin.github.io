@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-light-dark text-sm bg-light;
+  }
+}
+
+@layer components {
+  .hover-link {
+    @apply hover:border-primary hover:text-primary hover:bg-slate-200 rounded;
+  }
+
+  .hero-text {
+    @apply mt-4;
+  }
+
+  .section-container {
+    @apply max-w-2xl w-11/12 m-auto mb-12 px-2 sm:px-0;
+  }
+
+  .section-title {
+    @apply font-title text-xl mb-2;
+  }
+}
