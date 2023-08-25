@@ -1,25 +1,39 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Deck from "@/components/Deck.astro";
+import LinkedIn from "../../public/linkedin-svgrepo-com.svg";
+import GitHub from "../../public/github-142-svgrepo-com.svg";
+import Email from "../../public/email-svgrepo-com.svg";
 ---
 
 <Layout title="Jun's Developer Portfolio">
   <main>
     <section class="section-container">
-      <h1 class="font-title text-2xl mt-4">
+      <h1
+        class="font-title font-bold text-xl text-dark mt-4 inline-block select-none"
+      >
         Jun Yang <span class="text-primary">Chin</span>
       </h1>
-      <p class="hero-text">Hello, I'm web developer based in Kuala Lumpur.</p>
       <p class="hero-text">
-        Jun Yang is currently building(and breaking) things at
+        Hello, I'm Jun Yang 俊扬, some call me Jun and that's fine. I'm web
+        developer based in Kuala Lumpur 🧑‍💻.
+      </p>
+      <p class="hero-text">
+        As a developer that primarily develop server-side programs, I enjoy
+        fiddling with data by visualising how they transform and flow. In a
+        startup environment, I'd rather prioritise shipping features than
+        emphasising on clean code. However, there's always one principle that I
+        always have in mind i.e. "Composition over Inheritance". Currently
+        exploring the world of serverless technology and Go.
+      </p>
+      <p class="hero-text">
+        Jun Yang is building(and breaking) things at
         <a
           href="https://invokeisdata.com"
           target="_blank"
-          class="underline hover-link"
-        >
-          @invokeisdata
-        </a>. He is one of the core backend developer of INVOKE's first
-        brainchild - <a
+          class="underline hover-link">@invokeisdata</a
+        >. He is one of the core backend developer of INVOKE's first brainchild
+        - <a
           href="https://adnexio.jobs"
           target="_blank"
           class="underline hover-link">adnexio</a
@@ -28,18 +42,18 @@ import Deck from "@/components/Deck.astro";
       <ul class="flex flex-row gap-4 mt-4">
         <li>
           <a href="https://www.linkedin.com/in/junyangchin/" target="_blank">
-            <i class="bi bi-linkedin text-xl"></i>
+            <img src={LinkedIn} alt="linkedin icon" width="20px" />
           </a>
         </li>
         <li>
           <a href="https://github.com/junyang-chin" target="_blank">
-            <i class="bi bi-github text-xl"></i>
-          </a>
+            <img src={GitHub} alt="github icon" width="20px" /></a
+          >
         </li>
         <li>
           <a href="mailto:junyang.chin@outlook.com" target="_blank">
-            <i class="bi bi-envelope-fill text-xl"></i>
-          </a>
+            <img src={Email} alt="email icon" width="20px" /></a
+          >
         </li>
       </ul>
     </section>
@@ -67,7 +81,9 @@ import Deck from "@/components/Deck.astro";
       <div class="flex flex-wrap">
         <p class="py-1">The fastest way to reach me &nbsp</p>
         <p class="py-1">
-          → <span class="text-primary bg-slate-200 px-2 py-1 rounded inline">
+          → <span
+            class="text-primary hover:bg-slate-200 px-2 py-1 rounded inline select-all"
+          >
             junyang.chin@outlook.com
           </span>
         </p>

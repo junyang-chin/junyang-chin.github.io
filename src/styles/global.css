@@ -18,10 +18,10 @@
   }
 
   .section-container {
-    @apply max-w-2xl w-11/12 m-auto mb-12 px-2 sm:px-0;
+    @apply max-w-4xl w-11/12 m-auto mb-12 px-2 sm:px-0;
   }
 
   .section-title {
-    @apply font-title text-xl mb-2;
+    @apply font-title text-lg mb-2 font-bold text-dark;
   }
 }
