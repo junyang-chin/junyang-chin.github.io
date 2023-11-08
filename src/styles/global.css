@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-sans text-light-dark text-sm bg-light;
+    @apply font-sans text-light-dark text-base bg-light;
   }
 }
 
@@ -18,7 +18,7 @@
   }
 
   .section-container {
-    @apply max-w-4xl w-11/12 m-auto mb-12 px-2 sm:px-0;
+    @apply max-w-2xl w-10/12 m-auto mb-12 px-2 sm:px-0;
   }
 
   .section-title {
